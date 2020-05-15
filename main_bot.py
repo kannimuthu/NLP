@@ -62,10 +62,10 @@ def main():
     token = args.token
 
     if not token:
-        if not "1206987092:AAEmaH1q9OOGgGcLPxhyPISEGh6VLQiOwjo" in os.environ:
+        if not "TELEGRAM_TOKEN" in os.environ:
             print("Please, set bot token through --token or TELEGRAM_TOKEN env variable")
             return
-        token = os.environ["1206987092:AAEmaH1q9OOGgGcLPxhyPISEGh6VLQiOwjo"]
+        token = os.environ["TELEGRAM_TOKEN"]
 
     #################################################################
     
